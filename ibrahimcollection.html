@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBRAHIM COLLECTION - E-Commerce Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .custom-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #7c3aed 50%, #ef4444 100%);
+        }
+        .border-custom {
+            border: 2px solid #d1d5db;
+        }
+        .hover-shadow {
+            transition: box-shadow 0.3s ease;
+        }
+        .hover-shadow:hover {
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-indigo-700 custom-gradient bg-clip-text text-transparent">IBRAHIM COLLECTION</h1>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#clothes" class="text-gray-700 hover:text-indigo-600 transition-colors">Clothes</a>
+                <a href="#trousers" class="text-gray-700 hover:text-indigo-600 transition-colors">Trousers</a>
+                <a href="#caps" class="text-gray-700 hover:text-indigo-600 transition-colors">Caps</a>
+                <a href="#watches" class="text-gray-700 hover:text-indigo-600 transition-colors">Wristwatches</a>
+                <a href="#shoes" class="text-gray-700 hover:text-indigo-600 transition-colors">Shoes</a>
+                <a href="#slippers" class="text-gray-700 hover:text-indigo-600 transition-colors">Slippers</a>
+                <a href="#jewelry" class="text-gray-700 hover:text-indigo-600 transition-colors">Jewelry</a>
+                <a href="#underwear" class="text-gray-700 hover:text-indigo-600 transition-colors">Underwear</a>
+            </nav>
+            <button class="md:hidden text-gray-700 focus:outline-none" id="mobile-menu-btn">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <nav class="md:hidden bg-gray-100 px-4 hidden" id="mobile-menu">
+            <a href="#clothes" class="block py-2 text-gray-700 hover:text-indigo-600">Clothes</a>
+            <a href="#trousers" class="block py-2 text-gray-700 hover:text-indigo-600">Trousers</a>
+            <a href="#caps" class="block py-2 text-gray-700 hover:text-indigo-600">Caps</a>
+            <a href="#watches" class="block py-2 text-gray-700 hover:text-indigo-600">Wristwatches</a>
+            <a href="#shoes" class="block py-2 text-gray-700 hover:text-indigo-600">Shoes</a>
+            <a href="#slippers" class="block py-2 text-gray-700 hover:text-indigo-600">Slippers</a>
+            <a href="#jewelry" class="block py-2 text-gray-700 hover:text-indigo-600">Jewelry</a>
+            <a href="#underwear" class="block py-2 text-gray-700 hover:text-indigo-600">Underwear</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-6xl font-bold mb-4">Welcome to IBRAHIM COLLECTION</h2>
+            <p class="text-xl mb-8">Discover trendy clothes, accessories, and more. Quality meets affordability, prices in Naira.</p>
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c973a812-fc47-4e5e-a4c8-17d608a362e3.png" alt="Vibrant fashion runway display with diverse models showcasing elegant outfits in a modern urban setting with soft lighting and a crowd of people in the background" class="mx-auto rounded-lg shadow-lg hover-shadow" />
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <main class="container mx-auto px-4 py-16">
+        <!-- Clothes -->
+        <section id="clothes" class="mb-16">
+            <h3 class="text-3xl font-bold text-indigo-700 mb-8">Clothes</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 border-custom rounded-lg shadow-md hover-shadow">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e02d82a8-5e43-4a53-afbb-05ec9937ecd0.png" alt="Vibrant blue casual t-shirt hanging on a coat hanger in a bright wardrobe room with natural sunlight streaming in" class="w-full h-48 object-cover rounded-md mb-4" />
+                    <h4 class="text-xl font-semibold mb-2">Casual T-Shirt</h4>
+                    <p class="text-gray-600 mb-2">Comfortable cotton fabric, perfect for daily wear.</p>
+                    <p class="text-2xl font-bold text-green-600">₦3,500</p>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded mt-4 w-full hover:bg-indigo-700 transition-colors">Add to Cart</button>
+                </div>
+                <div class="bg-white p-6 border-custom rounded-lg shadow-md hover-shadow">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/87805983-9ae5-4fb0-87c5-d5f8baf1e799.png" alt="Classic white formal button-up shirt neatly folded on a wooden table in a sleek office environment" class="w-full h-48 object-cover rounded-md mb-4" />
+                    <h4 class="text-xl font-semibold mb-2">Formal Shirt</h4>
+                    <p class="text-gray-600 mb-2">Elegant design for professional settings.</p>
+                    <p class="text-2xl font-bold text-green-600">₦5,000</p>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded mt-4 w-full hover:bg-indigo-700 transition-colors">Add to Cart</button>
+                </div>
+                <div class="bg-white p-6 border-custom rounded-lg shadow-md hover-shadow">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b1fe22aa-dbef-41cc-9b7b-9f98b0d775f4.png" alt="Flowy Ankara print dress with vibrant African patterns in yellow and brown tones displayed on a mannequin in a cozy home setting" class="w-full h-48 object-cover rounded-md mb-4" />
+                    <h4 class="text-xl font-semibold mb-2">Ankara Print Dress</h4>
+                    <p class="text-gray-600 mb-2">Traditional Nigerian fabric, unique patterns.</p>
+                    <p class="text-2xl font-bold text-green-600">₦7,500</p>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded mt-4 w-full hover:bg-indigo-700 transition-colors">Add to Cart</button>
+                </div>
+                <div class="bg-white p-6 border-custom rounded-lg shadow-md hover-shadow">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f47213b2-0e39-44ef-a3c0-85579b67123a.png" alt="Stylish blue denim jacket zipped up on a hanger against a graffiti wall in an urban street scene" class="w-full h-48 object-cover rounded-md mb-4" />
+                    <h4 class="text-xl font-semibold mb-2">Denim Jacket</h4>
+                    <p class="text-gray-600 mb-2">Durable and versatile outerwear.</p>
+                    <p class="text-2xl font-bold text-green-600">₦10,000</p>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded mt-4 w-full hover:bg-indigo-700 transition-colors">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trousers -->
+        <section id="trousers" class="mb-16">
+            <h3 class="text-3xl font-bold text-indigo-700 mb-8">Trousers</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 border-custom rounded-lg shadow-md hover-shadow">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/92905b18-5b69-4da0-a641-fa7234b8e427.png" alt="Classic blue jeans folded neatly on a wooden shelf in a bright modern clothing store" class="w-full h-48 object-cover rounded-md mb-4" />
+                    <h4 class="text-xl font-semibold mb-2">Jeans</h4>
+                    <p class="text-gray-600 mb-2">Timeless denim for any occasion.</p>
+                    <p class="text-2xl font-bold text-green-600">₦6,000</p>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded mt-4 w-full hover:bg-indigo-700 transition-colors">Add to Cart</button>
+                </div>
+                <div class="bg-white p-6 border-custom rounded-lg shadow-md hover-shadow">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/06991ed7-06c4-4cae-a9d2-347f9ddf4b16.png" alt="Beige chinos pants neatly arranged on a rack in a boutique store window" class="w-full h-48 object-cover rounded-md mb-4" />
+                    <h4 class="text-xl font-semibold mb-2">Chinos</h4>
+                    <p class="text-gray-600 mb-2">Smart casual pants, easy to pair.</p>
+                    <p class="text-2xl font-bold text-green-600">₦5,500</p>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded mt-4 w-full hover:bg-indigo-700 transition-colors">Add to Cart</button>
+                </div>
+                <div class="bg-white p-6 border-custom rounded-lg shadow-md hover-shadow">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/67726b61-ee4d-49d3-9397-4569b2262237.png" alt="Military-style cargo pants with multiple pockets displayed on a mannequin in an outdoor adventure shop" class="w-full h-48 object-cover rounded-md mb-4" />
+                    <h4 class="text-xl font-semibold mb-2">Cargo Pants</h4>
+                    <p class="text-gray-600 mb-2">Practical with plenty of pocket space.</p>
+                    <p class="text-2xl font-bold text-green-600">₦7,000</p>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded mt-4 w-full hover:bg-indigo-700 transition-colors">Add to Cart</button>
+                </div>
+                <div class="bg-white p-6 border-custom rounded-lg shadow-md hover-shadow">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7fccd31b-598c-4ba3-bf6a-53fd224954c3.png" alt="Tailored black formal trousers hung on a peg in a luxurious suit store" class="w-full h-48 object-cover rounded-md mb-4" />
+                    <h4 class="text-xl font-semibold mb-2">Formal Trousers</h4>
+                    <p class="text-gray-600 mb-2">Professional-grade trousers for office wear.</p>
+                    <p class="text-2xl font-bold text-green-600">₦8,000</p>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded mt-4 w-full hover:bg-indigo-700 transition-colors">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Caps -->
+        <section id="caps" class="mb-16">
+            <h3 class="text-3xl font-bold text-indigo-700 mb-8">Caps</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 border-custom rounded-lg shadow-md hover-shadow">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2cded567-699f-40cf-97f3-26f98294a968.png" alt="Red baseball cap with curved brim positioned on a mannequin head in a sports equipment store" class="w-full h-48 object-cover rounded-md mb-4" />
+                    <h4 class="text-xl font-semibold mb-2">Baseball Cap</h4>
+                    <p class="text-gray-600 mb-2">Classic style for casual outings.</p>
+                    <p class="text-2xl font-bold text-green-600">₦2,000</p>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded mt-4 w-full hover:bg-indigo-700 transition-colors">Add to Cart</button>
+                </div>
+                <div class="bg-white p-6 border-custom rounded-lg shadow-md hover-shadow">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/af700101-e5f1-4172-89ff-fc7a53343a99.png" alt="Blue snapback cap with adjustable strap laying flat on a wooden table in a trendy streetwear shop" class="w-full h-48 object-cover rounded-md mb-4" />
+                    <h4 class="text-xl font-semibold mb-2">Snapback Cap</h4>
+                    <p class="text-gray-600 mb-2">Adjustable fit, urban vibe.</p>
+                    <p class="text-2xl font-bold text-green-600">₦2,500</p>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded mt-4 w-full hover:bg-indigo-700 transition-colors">Add to Cart</button>
+                </div>
+                <div class="bg-white p-6 border-custom rounded-lg shadow-md hover-shadow">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fea7dd73-ea76-4f83-8b25-ce03142c033f.png" alt="Elegant brown fedora hat tilted slightly on a hat stand in a fashion boutique" class="w-full h-48 object-cover rounded-md mb-4" />
+                    <h4 class="text-xl font-semibold mb-2">Fedora Hat</h4>
+                    <p class="text-gray-600 mb-2">Timeless elegance for any season.</p>
+                    <p class="text-2xl font-bold text-green-600">₦4,000</p>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded mt-4 w-full hover:bg-indigo-700 transition-colors">Add to Cart</button>
+                </div>
+                <div class="bg-white p-6 border-custom rounded-lg shadow-md hover-shadow">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4857df6d-7935-424c-9e15-f9046ba3ecbe.png" alt="Soft red beanie hat folded neatly on a shelf in a winter accessories store" class="w-full h-48 object-cover rounded-md mb-4" />
+                    <h4 class="text-xl font-semibold mb-2">Beanie</h4>
+                    <p class="text-gray-600 mb-2">Cozy warmth for cooler weather.</p>
+                    <p class="text-2xl font-bold text-green-600">₦1,800</p>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded mt-4 w-full hover:bg-indigo-700 transition-colors">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wristwatches -->
+        <section id="watches" class="mb-16">
+            <h3 class="text-3xl font-bold text-indigo-700 mb-8">Wristwatches</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 border-custom rounded-lg shadow-md hover-shadow">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/358f5d24-3f49-4222-8ff3-63f78a6af480.png" alt="Elegant brown leather strap watch with analog face displayed on a wrist in a jewelry case" class="w-full h-48 object-cover rounded-md mb-4" />
+                    <h4 class="text-xl font-semibold mb-2">Classic Leather Watch</h4>
+                    <p class="text-gray-600 mb-2">Timeless style with leather band.</p>
+                    <p class="text-2xl font-bold text-green-600">₦15,000</p>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded mt-4 w-full hover:bg-indigo-700 transition-colors">Add to Cart</button>
+                </div>
+                <div class="bg-white p-6 border-custom rounded-lg shadow-md hover-shadow">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1c81b31c-6d31-48e0-ab1e-e504fc0f45b2.png" alt="Black digital sports watch with multiple dials strapped to a wrist during a workout" class="w-full h-48 object-cover rounded-md mb-4" />
+                    <h4 class="text-xl font-semibold mb-2">Digital Sports Watch</h4>
+                    <p class="text-gray-600 mb-2">Durable for active lifestyles.</p>
+                    <p class="text-2xl font-bold text-green-600">₦12,000</p>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded mt-4 w-full hover:bg-indigo-700 transition-colors">Add to Cart</button>
+                </div>
+                <div class="bg-white p-6 border-custom rounded-lg shadow-md hover-shadow">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ae657c6e-f4b3-43d8-8956-9dfeedb465da.png" alt="Golden plated watch with gold chain laid out on velvet in a luxury watch store" class="w-full h-48 object-cover rounded-md mb-4" />
+                    <h4 class="text-xl font-semibold mb-2">Gold Plated Watch</h4>
+                    <p class="text-gray-600 mb-2">Luxurious gold finish.</p>
+                    <p class="text-2xl font-bold text-green-600">₦25,000</p>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded mt-4 w-full hover:bg-indigo-700 transition-colors">Add to Cart</button>
+                </div>
+                <div class="bg-white p-6 border-custom rounded-lg shadow-md hover-shadow">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7cd72853-6e61-44bb-a9c1-7bba6f244025.png" alt="Modern smartwatch with colorful touchscreen interface showing fitness stats on a wrist" class="w-full h-48 object-cover rounded-md mb-4" />
+                    <h4 class="text-xl font-semibold mb-2">Smartwatch</h4>
+                    <p class="text-gray-600 mb-2">Tech-savvy with multiple features.</p>
+                    <p class="text-2xl font-bold text-green-600">₦30,000</p>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded mt-4 w-full hover:bg-indigo-700 transition-colors">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shoes -->
+        <section id="shoes" class="mb-16">
+            <h3 class="text-3xl font-bold text-indigo-700 mb-8">Shoes</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 border-custom rounded-lg shadow-md hover-shadow">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4b05f293-3cf6-4a94-9c00-a1865ee64894.png" alt="Comfortable white sneakers with sporty design displayed on a shoe rack in a modern store" class="w-full h-48 object-cover rounded-md mb-4" />
+                    <h4 class="text-xl font-semibold mb-2">Sneakers</h4>
+                    <p class="text-gray-600 mb-2">Casual and comfortable footwear.</p>
+                    <p class="text-2xl font-bold text-green-600">₦8,000</p>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded mt-4 w-full hover:bg-indigo-700 transition-colors">Add to Cart</button>
+                </div>
+                <div class="bg-white p-6 border-custom rounded-lg shadow-md hover-shadow">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/10d98b6c-fe4e-41ec-a23a-5dcd5621cb93.png" alt="Polished black leather formal shoes neatly lined up on a shoe shelf" class="w-full h-48 object-cover rounded-md mb-4" />
+                    <h4 class="text-xl font-semibold mb-2">Formal Leather Shoes</h4>
+                    <p class="text-gray-600 mb-2">Elegant for professional settings.</p>
+                    <p class="text-2xl font-bold text-green-600">₦12,000</p>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded mt-4 w-full hover:bg-indigo-700 transition-colors">Add to Cart</button>
+                </div>
+                <div class="bg-white p-6 border-custom rounded-lg shadow-md hover-shadow">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f1c5c57f-d566-4863-8193-2c5384682844.png" alt="Brown loafers with tassel design on a wooden floor in a fashion boutique" class="w-full h-48 object-cover rounded-md mb-4" />
+                    <h4 class="text-xl font-semibold mb-2">Loafers</h4>
+                    <p class="text-gray-600 mb-2">Slip-on style for everyday wear.</p>
+                    <p class="text-2xl font-bold text-green-600">₦10,000</p>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded mt-4 w-full hover:bg-indigo-700 transition-colors">Add to Cart</button>
+                </div>
+                <div class="bg-white p-6 border-custom rounded-lg shadow-md hover-shadow">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/80266c4a-c8a3-49b0-929b-a3024e3a41e9.png" alt="High-performance running shoes with air cushioning shown from the front" class="w-full h-48 object-cover rounded-md mb-4" />
+                    <h4 class="text-xl font-semibold mb-2">Running Shoes</h4>
+                    <p class="text-gray-600 mb-2">Perfect for athletes and joggers.</p>
+                    <p class="text-2xl font-bold text-green-600">₦9,000</p>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded mt-4 w-full hover:bg-indigo-700 transition-colors">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slippers -->
+        <section id="slippers" class="mb-16">
+            <h3 class="text-3xl font-bold text-indigo-700 mb-8">Slippers</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 border-custom rounded-lg shadow-md hover-shadow">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1fc9387f-9be1-4db5-9a43-95e61980305f.png" alt="Comfortable pink casual slippers with fuzzy interior laid on a bed" class="w-full h-48 object-cover rounded-md mb-4" />
+                    <h4 class="text-xl font-semibold mb-2">Casual Slippers</h4>
+                    <p class="text-gray-600 mb-2">Cozy for home relaxation.</p>
+                    <p class="text-2xl font-bold text-green-600">₦2,500</p>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded mt-4 w-full hover:bg-indigo-700 transition-colors">Add to Cart</button>
+                </div>
+                <div class="bg-white p-6 border-custom rounded-lg shadow-md hover-shadow">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/44bd8d69-47a9-4941-a5dc-2c74f5e3658f.png" alt="Stylish brown leather slippers with suede lining on a marble floor" class="w-full h-48 object-cover rounded-md mb-4" />
+                    <h4 class="text-xl font-semibold mb-2">Leather Slippers</h4>
+                    <p class="text-gray-600 mb-2">Durable and elegant design.</p>
+                    <p class="text-2xl font-bold text-green-600">₦4,000</p>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded mt-4 w-full hover:bg-indigo-700 transition-colors">Add to Cart</button>
+                </div>
+                <div class="bg-white p-6 border-custom rounded-lg shadow-md hover-shadow">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/91745c2d-11dc-4df9-89ba-1e9a558c5f5c.png" alt="Colorful blue flip flops with rubber straps on a sandy beach" class="w-full h-48 object-cover rounded-md mb-4" />
+                    <h4 class="text-xl font-semibold mb-2">Flip Flops</h4>
+                    <p class="text-gray-600 mb-2">Light and breezy for summer.</p>
+                    <p class="text-2xl font-bold text-green-600">₦1,500</p>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded mt-4 w-full hover:bg-indigo-700 transition-colors">Add to Cart</button>
+                </div>
+                <div class="bg-white p-6 border-custom rounded-lg shadow-md hover-shadow">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/72fb7eb5-affb-42e6-900a-982adc903721.png" alt="Designer yellow slippers with intricate patterns displayed in a luxury store window" class="w-full h-48 object-cover rounded-md mb-4" />
+                    <h4 class="text-xl font-semibold mb-2">Designer Slippers</h4>
+                    <p class="text-gray-600 mb-2">Fashion-forward house shoes.</p>
+                    <p class="text-2xl font-bold text-green-600">₦5,000</p>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded mt-4 w-full hover:bg-indigo-700 transition-colors">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Jewelry -->
+        <section id="jewelry" class="mb-16">
+            <h3 class="text-3xl font-bold text-indigo-700 mb-8">Jewelry</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 border-custom rounded-lg shadow-md hover-shadow">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/60237d88-5402-4521-8aa4-1adc9bf3a18c.png" alt="Elegant gold necklace with intricate pendants sparkling under store lights" class="w-full h-48 object-cover rounded-md mb-4" />
+                    <h4 class="text-xl font-semibold mb-2">Gold Necklace</h4>
+                    <p class="text-gray-600 mb-2">Exquisite gold chain craftsmanship.</p>
+                    <p class="text-2xl font-bold text-green-600">₦20,000</p>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded mt-4 w-full hover:bg-indigo-700 transition-colors">Add to Cart</button>
+                </div>
+                <div class="bg-white p-6 border-custom rounded-lg shadow-md hover-shadow">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e1a88cc0-d8fe-4e43-8949-9e995a5145d8.png" alt="Stylish silver bracelet with charms danging elegantly on velvet display" class="w-full h-48 object-cover rounded-md mb-4" />
+                    <h4 class="text-xl font-semibold mb-2">Silver Bracelet</h4>
+                    <p class="text-gray-600 mb-2">Sleek silver accessory piece.</p>
+                    <p class="text-2xl font-bold text-green-600">₦12,000</p>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded mt-4 w-full hover:bg-indigo-700 transition-colors">Add to Cart</button>
+                </div>
+                <div class="bg-white p-6 border-custom rounded-lg shadow-md hover-shadow">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/de183814-b9a1-401f-946d-321d3def5d97.png" alt="Sparkling green gemstone earrings with gold settings on delicate chains" class="w-full h-48 object-cover rounded-md mb-4" />
+                    <h4 class="text-xl font-semibold mb-2">Earrings</h4>
+                    <p class="text-gray-600 mb-2">Delicate and elegant stud design.</p>
+                    <p class="text-2xl font-bold text-green-600">₦8,000</p>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded mt-4 w-full hover:bg-indigo-700 transition-colors">Add to Cart</button>
+                </div>
+                <div class="bg-white p-6 border-custom rounded-lg shadow-md hover-shadow">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d94eebd1-2868-46fa-b310-bd4886cc0c00.png" alt="Assortment of colorful gemstone rings arranged on a velvet tray in a jewelry shop" class="w-full h-48 object-cover rounded-md mb-4" />
+                    <h4 class="text-xl font-semibold mb-2">Rings</h4>
+                    <p class="text-gray-600 mb-2">Variety of styles and metals.</p>
+                    <p class="text-2xl font-bold text-green-600">₦10,000</p>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded mt-4 w-full hover:bg-indigo-700 transition-colors">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Underwear -->
+        <section id="underwear" class="mb-16">
+            <h3 class="text-3xl font-bold text-indigo-700 mb-8">Underwear</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 border-custom rounded-lg shadow-md hover-shadow">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3f78deac-a59e-462f-9655-8a07bf38f101.png" alt="Comfortable white cotton boxers neatly folded on a shelf in a lingerie store" class="w-full h-48 object-cover rounded-md mb-4" />
+                    <h4 class="text-xl font-semibold mb-2">Cotton Boxers</h4>
+                    <p class="text-gray-600 mb-2">Breathable and soft fabric.</p>
+                    <p class="text-2xl font-bold text-green-600">₦1,500</p>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded mt-4 w-full hover:bg-indigo-700 transition-colors">Add to Cart</button>
+                </div>
+                <div class="bg-white p-6 border-custom rounded-lg shadow-md hover-shadow">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ea49ed86-60a5-447c-8770-5bee7bc1e44f.png" alt="Red boxer briefs with elastic waistband displayed flat on a table" class="w-full h-48 object-cover rounded-md mb-4" />
+                    <h4 class="text-xl font-semibold mb-2">Briefs</h4>
+                    <p class="text-gray-600 mb-2">Classic fit for everyday use.</p>
+                    <p class="text-2xl font-bold text-green-600">₦1,200</p>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded mt-4 w-full hover:bg-indigo-700 transition-colors">Add to Cart</button>
+                </div>
+                <div class="bg-white p-6 border-custom rounded-lg shadow-md hover-shadow">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6f56642b-a405-411a-95f3-9762d5daa81c.png" alt="Black sports compression underwear suitable for workout scenarios" class="w-full h-48 object-cover rounded-md mb-4" />
+                    <h4 class="text-xl font-semibold mb-2">Sports Underwear</h4>
+                    <p class="text-gray-600 mb-2">Performance-grade moisture-wicking material.</p>
+                    <p class="text-2xl font-bold text-green-600">₦2,000</p>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded mt-4 w-full hover:bg-indigo-700 transition-colors">Add to Cart</button>
+                </div>
+                <div class="bg-white p-6 border-custom rounded-lg shadow-md hover-shadow">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8c9b5d0d-0b3a-401e-a302-9e46b6f1edae.png" alt="Gray thermal long underwear set for cold weather protection" class="w-full h-48 object-cover rounded-md mb-4" />
+                    <h4 class="text-xl font-semibold mb-2">Thermal Underwear</h4>
+                    <p class="text-gray-600 mb-2">Insulating layer for winter comfort.</p>
+                    <p class="text-2xl font-bold text-green-600">₦3,000</p>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded mt-4 w-full hover:bg-indigo-700 transition-colors">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2023 IBRAHIM COLLECTION. All rights reserved. Prices in Naira.</p>
+            <p>Contact us: info@ibrahimcollection.com | Phone: +234 XXX XXX XXXX</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
+</content>
+</create_file>
